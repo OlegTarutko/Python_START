@@ -10,3 +10,14 @@
 3
 x < 0, y < 0
 """
+q = int(input("Enter quarter number: "))
+if q == 1:
+    print("x > 0 and y > 0")
+elif q == 2:
+    print("x < 0 and y > 0")
+elif q == 3:
+    print("x < 0 and y < 0")
+elif q == 4:
+    print("x > 0 and y < 0")
+else:
+    print("Please enter a value from 1 to 4")

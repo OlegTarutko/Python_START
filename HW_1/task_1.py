@@ -15,3 +15,5 @@ True
 1
 False
 """
+a = int(input("Please enter number(1-7) day of the week: "))
+print(a == 6 or a == 7)

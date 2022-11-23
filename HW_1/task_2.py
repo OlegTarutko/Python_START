@@ -5,5 +5,8 @@
 """
 #  not (x or y or z) = not x and not y and not z        //Это для себя. Перевод символов.
 
-x, y, z = 0, 0, 0
+x = float(input('Enter x: '))
+y = float(input('Enter y: '))
+z = float(input('Enter z: '))
+
 print(not (x or y or z) == (not x and not y and not z))

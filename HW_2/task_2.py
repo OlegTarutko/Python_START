@@ -8,3 +8,10 @@
 4
 [1, 2, 6, 24]
 """
+num = int(input('Enter number: '))
+f_list = [1] * num
+
+for i in range(num):
+    f_list[i] = f_list[i - 1] * (i + 1)
+
+print(f_list)

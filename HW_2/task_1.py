@@ -11,3 +11,10 @@
 0.56
 11
 """
+num = float(input('Enter number: '))
+str_number = str(num)
+sum = 0
+for i in range(len(str_number)):
+    if str_number[i].isdigit():
+        sum += int(str_number[i])
+print(sum)

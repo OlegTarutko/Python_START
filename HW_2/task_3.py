@@ -16,3 +16,6 @@
 3
 6.62
 """
+length_list = int(input('Введите размер списка: '))
+list = [(1 + 1 / i) ** i for i in range(1, length_list + 1)]
+print(round(sum(list), 2))

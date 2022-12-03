@@ -13,3 +13,11 @@
 [2, 3, 5, 6]
 [12, 15]
 """
+import random
+n = int(input("Enter the number of elements: "))
+lst = [random.randint(0, n) for i in range(n)]
+# print(lst) для проверки работоспособности.
+n_lst = []
+for i in range(0, (n + 1) // 2):
+    n_lst.append(lst[i] * lst[-i - 1])
+print(n_lst)

@@ -14,16 +14,13 @@
 [12, 15]
 """
 import random
+
 n = int(input("Enter the number of elements: "))
 rnd_list = []
 for i in range(n):
-    rnd_list.append(random.randint(-n, n)) #Целые числа как положительные, так и отрицательные.
+    rnd_list.append(random.randint(-n, n))  # Целые числа как положительные, так и отрицательные.
 # print(rnd_list) Для проверки работоспособности.
 n_lst = []
 for i in range(0, (n + 1) // 2):
     n_lst.append(rnd_list[i] * rnd_list[-i - 1])
 print(n_lst)
-
-
-
-

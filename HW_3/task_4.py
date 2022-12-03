@@ -14,3 +14,10 @@
 2
 10
 """
+number = int(input("Please enter number: "))
+lst = ''
+
+while number > 0:
+    lst = str(number % 2) + lst
+    number //= 2
+print(int(lst))

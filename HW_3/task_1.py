@@ -11,3 +11,11 @@
 [5, 1, 5, 2, 7, 11]
 14
 """
+import random
+
+n = int(input("Enter the number of elements: "))
+rnd_list = []
+for i in range(n):
+    rnd_list.append(random.randint(-n, n))  # Целые числа, как положительные, так и отрицательные.
+print(rnd_list)  # Для проверки работоспособности.
+print(sum(rnd_list[1::2]))

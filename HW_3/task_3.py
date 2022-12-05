@@ -15,7 +15,7 @@ number = int(input("Enter number: "))
 lst = [round(random.uniform(1, 9), 2) for i in range(number)]
 lst_2 = []
 
-for i in range(len(lst)):
+for i in range(number):
     lst_2.append(lst[i] % 1)
 result = max(lst_2) - min(lst_2)
 

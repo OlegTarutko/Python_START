@@ -16,7 +16,7 @@ lst = [round(random.uniform(1, 9), 2) for i in range(number)]
 lst_2 = []
 
 for i in range(len(lst)):
-    lst_2.append(lst[i] - int(lst[i]))
+    lst_2.append(lst[i] % 1)
 result = max(lst_2) - min(lst_2)
 
 print(lst)  # Для проверки работоспособности.

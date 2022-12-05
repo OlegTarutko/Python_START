@@ -8,3 +8,10 @@
 [1, 1, 2, 3, 3, 4, 5, 5, 6, 7, 7, 8, 9, 9]
 [2, 4, 6, 8]
 """
+
+lst = [11, 11, 0, -1, 0, 1, 2, 3, 3, 4, 5, 5, 6, 7, 7, 8, 9, 9]
+new_lst = []
+for i in lst:
+    if lst.count(i) == 1:
+        new_lst.append(i)
+print(new_lst)

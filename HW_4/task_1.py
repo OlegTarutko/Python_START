@@ -11,3 +11,14 @@
 38
 [2, 19]
 """
+
+number = int(input('Enter number: '))
+lst = []
+counter = 2
+while number > 1:
+    if (number % counter) != 0:
+        counter += 1
+    else:
+        lst.append(counter)
+        number /= counter
+print(lst)

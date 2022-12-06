@@ -19,19 +19,19 @@ lst = [randint(0, 100) for number in range(k)]
 
 def new_polynomial(lst):  # создание полинома степени К
     if sum(lst) == 0:  # Проверка на 0
-        return '0=0'
+        return '0 = 0'
     i = len(lst) - 1
     result = []
     for num in lst:
         if num:
             if i == 0:
                 result.append(f'{num}')  # значение без переменной
-            elif num == 1:
+            elif i == 1:
                 result.append(f'{num if num != 1 else ""}x')  # Без 1
             else:
                 result.append(f'{num if num != 1 else ""}x^{i}')  # степени
         i -= 1
-    return ' + '.join(result) + ' =0'
+    return ' + '.join(result) + ' = 0'
 
 
 polynomial = new_polynomial(lst)  # Вызов функции создания полинома

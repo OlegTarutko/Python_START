@@ -11,7 +11,6 @@
 38
 [2, 19]
 """
-
 number = int(input('Enter number: '))
 lst = []
 counter = 2

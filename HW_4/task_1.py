@@ -15,7 +15,7 @@ number = int(input('Enter number: '))
 lst = []
 counter = 2
 while number > 1:
-    if (number % counter) != 0:
+    if number % counter != 0:
         counter += 1
     else:
         lst.append(counter)

@@ -24,7 +24,7 @@ print(rnd_lst)
 
 lst_1 = []
 lst_2 = []
-lst_3 = list(set(rnd_lst))
+lst_3 = list(set(rnd_lst))  # По вашей рекомендации с семинара.
 for num in rnd_lst:
     if rnd_lst.count(num) == 1:
         lst_1.append(num)

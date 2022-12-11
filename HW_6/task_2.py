@@ -13,3 +13,25 @@
 [1, 3, 5]
 [1, 2, 5, 3, 10]
 """
+import random
+
+N = int(input('Enter N: '))
+
+rnd_lst = []
+for i in range(N):
+    rnd_lst.append(random.randint(0, N))
+print(rnd_lst)
+
+lst_1 = []
+lst_2 = []
+lst_3 = list(set(rnd_lst))
+for num in rnd_lst:
+    if rnd_lst.count(num) == 1:
+        lst_1.append(num)
+    else:
+        if lst_2.count(num) == 0:
+            lst_2.append(num)
+
+print(lst_1)
+print(lst_2)
+print(lst_3)

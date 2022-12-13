@@ -14,13 +14,13 @@
 
 exp = input("Введите математическое выражение: ")
 
-def find(exp, serch_operand):
+def find(exp, search_operand):
     ind_start = 0
     ind_finish = 0
     ind_oper = 0
     operands_full = ['*', '/', '-', '+']
     operands = ['*', '/', '-', '+']
-    for op in serch_operand:
+    for op in search_operand:
         operands.remove(op)
     found = False
     for i, sym in enumerate(exp):
@@ -31,7 +31,7 @@ def find(exp, serch_operand):
         elif found and sym in operands_full:
             ind_finish = i - 1
             return ind_start, ind_finish, ind_oper
-        elif sym in serch_operand:
+        elif sym in search_operand:
             found = True
             ind_oper = i
             ind_finish = len(exp) - 1
